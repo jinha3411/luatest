@@ -1,0 +1,31 @@
+--로봇 설정
+RobotControlParameter_TCPMaxSpeed = 1000.0
+RobotControlParameter_SpeedFactor = 1.0
+RobotControlParameter_ToolWeight = 2.8
+RobotControlParameter_ToolMassCenterX = 0
+RobotControlParameter_ToolMassCenterY = 0
+RobotControlParameter_ToolMassCenterZ = 0
+RobotControlParameter_MountType = 0
+RobotControlParameter_MountAngleRx = 0
+RobotControlParameter_MountAngleRy = 0
+RobotControlParameter_TCP = { -85.15121, -243.0711, 317.5071, 39, 0, 0 }
+RobotControlParameter_JointAcc = 200.0
+RobotControlParameter_JointDec = 200.0
+RobotControlParameter_JointJerk = 1.0
+RobotControlParameter_TCPAcc = 1000.0
+RobotControlParameter_TCPDec = 1000.0
+RobotControlParameter_TCPJerk = 1.0
+
+RobotControlParameter_JointAngle1Max = 355
+RobotControlParameter_JointAngle1Min = -355
+RobotControlParameter_JointAngle2Max = 355
+RobotControlParameter_JointAngle2Min = -355
+RobotControlParameter_JointAngle3Max = 160
+RobotControlParameter_JointAngle3Min = -160
+RobotControlParameter_JointAngle4Max = 355
+RobotControlParameter_JointAngle4Min = -355
+RobotControlParameter_JointAngle5Max = 355
+RobotControlParameter_JointAngle5Min = -355
+RobotControlParameter_JointAngle6Max = 355
+RobotControlParameter_JointAngle6Min = -355
+RobotControlParameter_JointAngle3TCPModeNotUse = 10

@@ -1,0 +1,34 @@
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\lua53.dll
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\liblua53.dylib
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\x86\lua53.dll
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\x64\lua53.dll
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\x64\liblua53.so
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\KeraLua.dll
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\NLua.dll
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\KeraLua.xml
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+c:\users\esser\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\bin\Debug\lua53.dll
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\bin\Debug\liblua53.dylib
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\bin\Debug\x86\lua53.dll
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\bin\Debug\x64\lua53.dll
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\bin\Debug\x64\liblua53.so
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\bin\Debug\KeraLua.dll
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\bin\Debug\NLua.dll
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\bin\Debug\KeraLua.xml
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\HHI\Desktop\luatest\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache

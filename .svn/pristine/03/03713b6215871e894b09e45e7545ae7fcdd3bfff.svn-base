@@ -1,0 +1,225 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WindowsFormsApplication1123
+{
+    class temp
+    {
+        Lua LuaObject;
+        FunctionTest FunctionTestClass;
+
+        public Form1()
+        {
+            InitializeComponent();
+            FunctionTestClass = new FunctionTest();
+            LuaObject = new Lua();
+            //LuaObject.DoFile("aaa.lua");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double dd = Convert.ToDouble(LuaObject["integer_test"]);
+            Console.WriteLine("정수 테스트 송신 완료: " + dd);
+        }
+
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            textBox1.Text = FunctionTestClass.index.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Single float_value = Convert.ToSingle(LuaObject["floating_test"]);
+            double double_value = Convert.ToDouble(LuaObject["double_test"]);
+            
+            Console.WriteLine("Float 테스트 송신 완료: " + float_value);
+            Console.WriteLine("Double 테스트 송신 완료: " + double_value);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            /*
+            LuaTable tb = LuaObject.GetTable("array_list");
+            Dictionary<object, object> dict = LuaObject.GetTableDict(tb);
+            for (int i = 0; i < 8; i++)
+            {
+                double value = Convert.ToDouble(tb[i]);
+                Console.WriteLine(value);
+            }
+            */
+
+            /*
+            LuaTable array_list_object = (LuaTable)LuaObject["array_list"];
+            for(int i = 0; i < 8; i++)
+            {
+                Console.WriteLine(array_list_object[-1]);
+            }*/
+
+            
+            LuaTable matrix_object = (LuaTable)LuaObject["matrix"];
+            for(int i = 0; i < 3; i++)
+            {
+                LuaTable current_row = (LuaTable)matrix_object[i];
+                Console.WriteLine("{0}\t{1}\t{2}", current_row[1], current_row[2], current_row[3]);
+            }
+        
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            /// Sum 함수 콜하는 거
+            /*
+            int input_a = 10;
+            int input_b = 11;
+            LuaFunction add_function = LuaObject["function_test"] as LuaFunction;
+            object[] test_val =  add_function.Call(input_a, input_b);
+            int sum = Convert.ToInt16(test_val[0]);
+            Console.WriteLine(sum);
+            */
+
+            /// Array 함수 받아오는거
+            int input_a = 15;
+            int input_b = 30;
+            LuaFunction array_function = LuaObject["function_test_array"] as LuaFunction;
+            object[] test_val = array_function.Call(input_a, input_b);
+            LuaTable output = (LuaTable)test_val[0];
+            Console.WriteLine(output[1]);
+            Console.WriteLine(output[2]);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int input_a = 15;
+            int input_b = 30;
+            LuaFunction return_multiple_function = LuaObject["function_return_multiple"] as LuaFunction;
+            object[] return_val = return_multiple_function.Call(input_a, input_b);
+            Console.WriteLine(return_val[0]);
+            Console.WriteLine(return_val[1]);
+            LuaTable table_output = (LuaTable)return_val[2];
+            Console.WriteLine(table_output[1]);
+            Console.WriteLine(table_output[2]);
+            Console.WriteLine(table_output[3]);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string output = Convert.ToString(LuaObject["string_test"]);
+            Console.WriteLine(output);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            LuaFunction include_test_function = LuaObject["function_include_test"] as LuaFunction;
+            object[] return_val = include_test_function.Call();
+            Console.WriteLine(return_val[0]);
+        }
+        public int test()
+        {
+            return 10;
+        }
+
+        public LuaTable test2()
+        {
+            LuaTable returnvalue = (LuaTable)LuaObject.DoString("return {}")[0];
+            returnvalue["name"] = "jinha";
+            returnvalue["age"] = 18;
+            return returnvalue;
+        }
+        
+
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            LuaObject["current_form"] = this;
+            LuaObject.DoFile("aaa.lua");
+            Console.WriteLine(LuaObject["name"]);
+            Console.WriteLine(LuaObject["age"]);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            data_typeA output = new data_typeA();
+            LuaObject["file_file"] = output;
+            LuaObject.DoFile("aaa.lua");
+            Console.WriteLine(LuaObject["output_A"]);
+            Console.WriteLine(LuaObject["output_B"]);
+            Console.WriteLine(LuaObject["output_C"]);
+            Console.WriteLine(LuaObject["output_D"]);
+            
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            
+            //LuaObject.DoString("coroutine.resume(co)");
+            LuaFunction corotuine_test_function = LuaObject["function_coroutine_test"] as LuaFunction;
+            
+            object[] valuetemp = corotuine_test_function.Call();
+            int value2 = Convert.ToInt16( valuetemp[0]);
+            Console.WriteLine(value2);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            LuaObject["file_file"] = this;
+            LuaObject.DoFile("aaa.lua");
+        }
+        public void haha()
+        {
+            int count = 0;
+            while(true)
+            {
+                count = count + 1;
+                if (count >= 10) break;
+                Console.WriteLine("haha");
+                Thread.Sleep(300);
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            LuaObject.DoFile("aaa.lua");
+        }
+    }
+
+    public class data_typeB
+    {
+        public int C;
+        public int D;
+        public data_typeB()
+        {
+            C = 30;
+            D = 40;
+        }
+    }
+    public class data_typeA
+    {
+        public int A;
+        public int B;
+        public data_typeB inner_data;
+        public data_typeA()
+        {
+            A = 10;
+            B = 20;
+            inner_data = new data_typeB();
+        }
+        public int haha()
+        {
+            return A;
+        }
+    }
+    public class FunctionTest
+    {
+        public int index=0;
+        public int Func1(int i)
+        {
+            Console.WriteLine("test");
+            return i;
+        }
+    }
+    }
+}
